@@ -393,11 +393,11 @@ a {
 }
 .showcase-text h2 {
   resize: none;
-  font-size:min(10vw,49px) ;
+  font-size:min(9vw,49px) ;
   font-family:'ZenOldMincho-Regular';
 }
 .showcase-text h3 {
-  font-size:min(5.7vw,26px);
+  font-size:min(5vw,26px);
   font-family:'ZenOldMincho-Regular';
 }
 
