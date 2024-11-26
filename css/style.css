@@ -392,12 +392,11 @@ a {
   z-index: 1;
 }
 .showcase-text h2 {
-  resize: none;
   font-size:min(9vw,49px) ;
   font-family:'ZenOldMincho-Regular';
 }
 .showcase-text h3 {
-  font-size:min(4vw,16px);
+  font-size:min(4.8vw,24px);
   font-family:'ZenOldMincho-Regular';
 }
 
