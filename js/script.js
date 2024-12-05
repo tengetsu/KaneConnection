@@ -49,6 +49,245 @@ $(function () {
   webStorage();
 });
 
+
+var slide = document.getElementById('slider');
+var prev = document.getElementById('prev');
+var next = document.getElementById('next');
+var list1 = document.getElementById('list1');
+var list2 = document.getElementById('list2');
+var list3 = document.getElementById('list3');
+var list4 = document.getElementById('list4');
+var list5 = document.getElementById('list5');
+var list6 = document.getElementById('list6');
+
+// クリックイベント
+
+next.addEventListener('click', nextClick);
+prev.addEventListener('click', prevClick);
+
+function nextClick() {
+  if (slide.classList.contains('slider1') === true) {
+    slide.classList.remove('slider1');
+    slide.classList.add('slider2');
+    list1.style.backgroundColor = 'transparent';
+    list2.style.backgroundColor = '#ffffff';
+    count = 0;
+  } else if (slide.classList.contains('slider2') === true) {
+    slide.classList.remove('slider2');
+    slide.classList.add('slider3');
+    list2.style.backgroundColor = 'transparent';
+    list3.style.backgroundColor = '#ffffff';
+    count = 0;
+  } else if (slide.classList.contains('slider3') === true) {
+    slide.classList.remove('slider3');
+    slide.classList.add('slider4');
+    list3.style.backgroundColor = 'transparent';
+    list4.style.backgroundColor = '#ffffff';
+    count = 0;
+  } else if (slide.classList.contains('slider4') === true) {
+    slide.classList.remove('slider4');
+    slide.classList.add('slider5');
+    list4.style.backgroundColor = 'transparent';
+    list5.style.backgroundColor = '#ffffff';
+    count = 0;
+  } else if (slide.classList.contains('slider5') === true) {
+    slide.classList.remove('slider5');
+    slide.classList.add('slider6');
+    list5.style.backgroundColor = 'transparent';
+    list6.style.backgroundColor = '#ffffff';
+    count = 0;
+  } else {
+    slide.classList.remove('slider6');
+    slide.classList.add('slider1');
+    list6.style.backgroundColor = 'transparent';
+    list1.style.backgroundColor = '#ffffff';
+    count = 0;
+  }
+};
+
+function prevClick() {
+  if (slide.classList.contains('slider1') === true) {
+    slide.classList.remove('slider1');
+    slide.classList.add('slider6');
+    list1.style.backgroundColor = 'transparent';
+    list6.style.backgroundColor = '#ffffff';
+    count = 0;
+  } else if (slide.classList.contains('slider2') === true) {
+    slide.classList.remove('slider2');
+    slide.classList.add('slider1');
+    list2.style.backgroundColor = 'transparent';
+    list1.style.backgroundColor = '#ffffff';
+    count = 0;
+  } else if (slide.classList.contains('slider3') === true) {
+    slide.classList.remove('slider3');
+    slide.classList.add('slider2');
+    list3.style.backgroundColor = 'transparent';
+    list2.style.backgroundColor = '#ffffff';
+    count = 0;
+  } else if (slide.classList.contains('slider4') === true) {
+    slide.classList.remove('slider4');
+    slide.classList.add('slider3');
+    list4.style.backgroundColor = 'transparent';
+    list3.style.backgroundColor = '#ffffff';
+    count = 0;
+  } else if (slide.classList.contains('slider5') === true) {
+    slide.classList.remove('slider5');
+    slide.classList.add('slider4');
+    list5.style.backgroundColor = 'transparent';
+    list4.style.backgroundColor = '#ffffff';
+    count = 0;
+  } else {
+    slide.classList.remove('slider6');
+    slide.classList.add('slider5');
+    list6.style.backgroundColor = 'transparent';
+    list5.style.backgroundColor = '#ffffff';
+    count = 0;
+  }
+};
+
+// インジケーター
+
+list1.addEventListener('click', click1);
+list2.addEventListener('click', click2);
+list3.addEventListener('click', click3);
+list4.addEventListener('click', click4);
+list5.addEventListener('click', click5);
+list6.addEventListener('click', click6);
+
+function click1() {
+  slide.classList.add('slider1');
+  slide.classList.remove('slider2');
+  slide.classList.remove('slider3');
+  slide.classList.remove('slider4');
+  slide.classList.remove('slider5');
+  slide.classList.remove('slider6');
+  list1.style.backgroundColor = '#ffffff';
+  list2.style.backgroundColor = 'transparent';
+  list3.style.backgroundColor = 'transparent';
+  list4.style.backgroundColor = 'transparent';
+  list5.style.backgroundColor = 'transparent';
+  list6.style.backgroundColor = 'transparent';
+  count = 0;
+}
+
+function click2() {
+  slide.classList.remove('slider1');
+  slide.classList.add('slider2');
+  slide.classList.remove('slider3');
+  slide.classList.remove('slider4');
+  slide.classList.remove('slider5');
+  slide.classList.remove('slider6');
+  list1.style.backgroundColor = 'transparent';
+  list2.style.backgroundColor = '#ffffff';
+  list3.style.backgroundColor = 'transparent';
+  list4.style.backgroundColor = 'transparent';
+  list5.style.backgroundColor = 'transparent';
+  list6.style.backgroundColor = 'transparent';
+  count = 0;
+}
+
+function click3() {
+  slide.classList.remove('slider1');
+  slide.classList.remove('slider2');
+  slide.classList.add('slider3');
+  slide.classList.remove('slider4');
+  slide.classList.remove('slider5');
+  slide.classList.remove('slider6');
+  list1.style.backgroundColor = 'transparent';
+  list2.style.backgroundColor = 'transparent';
+  list3.style.backgroundColor = '#ffffff';
+  list4.style.backgroundColor = 'transparent';
+  list5.style.backgroundColor = 'transparent';
+  list6.style.backgroundColor = 'transparent';
+  count = 0;
+}
+
+function click4() {
+  slide.classList.remove('slider1');
+  slide.classList.remove('slider2');
+  slide.classList.remove('slider3');
+  slide.classList.add('slider4');
+  slide.classList.remove('slider5');
+  slide.classList.remove('slider6');
+  list1.style.backgroundColor = 'transparent';
+  list2.style.backgroundColor = 'transparent';
+  list3.style.backgroundColor = 'transparent';
+  list4.style.backgroundColor = '#ffffff';
+  list5.style.backgroundColor = 'transparent';
+  list6.style.backgroundColor = 'transparent';
+  count = 0;
+}
+
+function click5() {
+  slide.classList.remove('slider1');
+  slide.classList.remove('slider2');
+  slide.classList.remove('slider3');
+  slide.classList.remove('slider4');
+  slide.classList.add('slider5');
+  slide.classList.remove('slider6');
+  list1.style.backgroundColor = 'transparent';
+  list2.style.backgroundColor = 'transparent';
+  list3.style.backgroundColor = 'transparent';
+  list4.style.backgroundColor = 'transparent';
+  list5.style.backgroundColor = '#ffffff';
+  list6.style.backgroundColor = 'transparent';
+  count = 0;
+}
+
+function click6() {
+  slide.classList.remove('slider1');
+  slide.classList.remove('slider2');
+  slide.classList.remove('slider3');
+  slide.classList.remove('slider4');
+  slide.classList.remove('slider5');
+  slide.classList.add('slider6');
+  list1.style.backgroundColor = 'transparent';
+  list2.style.backgroundColor = 'transparent';
+  list3.style.backgroundColor = 'transparent';
+  list4.style.backgroundColor = 'transparent';
+  list5.style.backgroundColor = 'transparent';
+  list6.style.backgroundColor = '#ffffff';
+  count = 0;
+}
+
+// 自動スライド
+// var count = 0;
+
+// setInterval(() => {
+//   if (count > 4) {
+//     count = 0;
+//     nextClick();
+//   }
+//   count++;
+//   console.log(count);
+// }, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----- ハンバーガー及びアコーディオンメニュー関連 -----*/
 
 // メニュー展開時に背景を固定
@@ -183,11 +422,11 @@ $(function() {
 
 			var current;
 			switch(ttl) {
-				case "PORTFOLIO ポートフォリオ":
+				case "PROFILE自己紹介":
 					current = $('#header0 .sub-menu-list.sub01');
 					$(current).addClass('selected');
 					break;
-				case "PORTFOLIO ポートフォリオ":
+				case "PORTFOLIOポートフォリオ":
 					current = $('#header0 .sub-menu-list.sub02');
 					$(current).addClass('selected');
 					break;
@@ -219,13 +458,13 @@ window.addEventListener("scroll", function () {
 //障害について
 hideLogin1();
 function showLogin1(){
-	const loginForm1 = document.getElementById("disabled");
+	const loginForm1 = document.getElementById("handicapped");
 	// blockで表示
 	loginForm1.style.display ="block";
 	$("body").css("overflow-y", "hidden");        
 }
 function hideLogin1(){
-	var loginForm1 = document.getElementById("disabled");
+	var loginForm1 = document.getElementById("handicapped");
 	// noneで非表示
 	loginForm1.style.display ="none";
 	$("body").css("overflow-y", "visible");

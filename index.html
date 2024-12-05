@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="./css/style.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script> -->
   </head>
 
   <body id="secret">
@@ -22,11 +22,129 @@
       </div>
     </div>
 
-    <div id="disabled" hidden="true">
+    <div id="handicapped" hidden="true">
 
       <div class="overlay"></div>
 
-      <div class="login_from">
+      <div class="wrapper">
+
+        <button onclick="hideLogin1(),location.href='#return'">✖</button>
+        <span id="prev" class="prev"></span>
+        <span id="next" class="next"></span>
+
+        <ul class="indicator">
+          <li id="list1"></li>
+          <li id="list2"></li>
+          <li id="list3"></li>
+          <li id="list4"></li>
+          <li id="list5"></li>
+          <li id="list6"></li>
+        </ul>
+
+        <div id="slider" class="slider slider1">
+
+          <div class="handicapped handicapped1">
+            <p style="font-size: min(3vw,16px);">
+              <font style="font-size:min(3.56vw,18px); font-family:'ZenOldMincho-Regular';">
+              1.症名（障害名について）
+              </font>
+              <br>
+              　発達障害<br>
+              　(ADHD、ASD、LD、PDD、双極性障害Ⅱ型の混合型)
+            </p>
+          </div>
+
+          <div class="handicapped handicapped2">
+            <p style="font-size: min(3vw,16px);">
+              <font style="font-size:min(3.56vw,18px); font-family:'ZenOldMincho-Regular';">
+              2.経緯（発症した時期、状況、原因）
+              </font>
+              <br>
+              　2020年、就労環境の悪化によるストレスから<br>
+              　「適応障害」「鬱」の症状が現れ、精神障害を発症。
+            </p>
+          </div>
+
+          <div class="handicapped handicapped3">
+            <p style="font-size: min(3vw,16px);">
+              <font style="font-size:min(3.56vw,18px); font-family:'ZenOldMincho-Regular';">
+              3.変化（過去と現在の症状の違い）
+              </font>
+              <br>
+              　診断当初は「適応障害」と受けていたが、主治医より<br>
+              　出生から現在に至るまでの「対人関係、環境、<br>
+              　思考傾向、行動面」など様々な情報から調査した結果<br>
+              　「発達障害」である事が判明。
+            </p>
+          </div>
+
+          <div class="handicapped handicapped4">
+            <p style="font-size: min(3vw,16px);">
+              <font style="font-size:min(3.56vw,18px); font-family:'ZenOldMincho-Regular';">
+              4.特性（特性の説明と、働く上での影響度合い）
+              </font>
+              <br>
+              　①休憩や睡眠時間を削る程、過集中になりやすく、<br>
+              　　特定の物事に強い興味、関心、拘りがある。<br>
+              　②スケジュール管理、マルチタスク、着手中の作業<br>
+              　　から次の作業への移行が不得意である。<br>
+              　③視線や物音等に過敏である。<br>
+              　④様々な分野で疑問を持ちやすく、曖昧な指示や<br>
+              　　明確な理由が無い場合等に、ルールやマナーを<br>
+              　　遵守する際の判断に戸惑う。<br>
+              　⑤高圧的な態度、言動、仕草などを取られる相手が<br>
+              　　居る場合おいて、作業を遂行できなくなることや、<br>
+              　　コミュニケーションの低下、体調悪化、通勤不可<br>
+              　　等になる恐れがある。<br>
+            </p>
+          </div>
+
+          <div class="handicapped handicapped5">
+            <p style="font-size: min(3vw,16px);">
+              <font style="font-size:min(3.56vw,18px); font-family:'ZenOldMincho-Regular';">
+              5.対処（自分でできる対処法）
+              </font>
+              <br>
+              　①携帯等のアラーム機能を用いて意識的に休憩を挟み<br>
+              　　過集中になりすぎない様に対処している。<br>
+              　②関係者とスケジュールや手順、作業時間を事前に<br>
+              　　確立し共有しておくことで、移行しやすくする。<br>
+              　③視線は、パーテーション等でカバーし、会話や音は<br>
+              　　ノイズキャンセリングイヤホンを着用し遮断する。<br>
+              　　遮断しきれない場合は、音楽を流す事で対処する。<br>
+              　④自己発信し関係者に質問し、独自に判断や行動する<br>
+              　　事を防ぐ様に努めている。<br>
+              　⑤一時的に場を離れたい旨を関係者に相談し、<br>
+              　　５分程度の小休憩をいただくことで対処する。
+            </p>
+          </div>
+
+          <div class="handicapped handicapped6">
+            <p style="font-size: min(3vw,16px);">
+              <font style="font-size:min(3.56vw,18px); font-family:'ZenOldMincho-Regular';">
+              6.配慮（周囲や企業へ理解、配慮して欲しい事）
+              </font>
+              <br>
+              　①集中できずにいる場合、自己発信し相談いたします<br>
+              　　ので１５分程、面談のお時間をいただけますと<br>
+              　　幸いです。<br>
+              　②相手が応答を求めることを想定し、即座に応答<br>
+              　　できる様、周囲にも目と気を配る様、努めて<br>
+              　　参りますので、ノイズキャンセリングイヤホンの<br>
+              　　着用並びに外部音の遮断にあたり、音楽を流し<br>
+              　　作業を行う事への許可をいただけますと幸いです。<br>
+              　③状況把握の頻度を多くしていただくと共に、<br>
+              　　どこまで作業を進めてもらう事で次の作業へ<br>
+              　　移る際に区切りが良い状況になるのかなど、<br>
+              　　明確な指示をいただけますと幸いです。
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- <div class="login_from">
         <button onclick="hideLogin1(),location.href='#return'">×</button>
         <p>
           <font style="font-size:min(3.56vw,18px); font-family:'ZenOldMincho-Regular';">
@@ -102,7 +220,7 @@
           　　移る際に区切りが良い状況になるのかなど、<br>
           　　明確な指示をいただけますと幸いです。
         </p>
-      </div>
+      </div> -->
 
     </div>
 
@@ -300,22 +418,19 @@
 
         <div>
           <ul class="menu-list">
-            <li><a href="./index.html">TOP<br><font size="1">トップ</font></a></li>
-            <li><a href="#link1">PROFILE<br><font size="1">自己紹介</font></a></li>
-            <li><a href="#link2">PORTFOLIO<br><font size="1">ポートフォリオ</font></a></li>
-            <li><a href="">CONTACT<br><font size="1">お問い合わせ</font></a></li>
+            <li><a href="" class="scrollable">TOP<br><font size="1">トップ</font></a></li>
+            <li><a href="#link1" class="scrollable">PROFILE<br><font size="1">自己紹介</font></a></li>
+            <li><a href="#link2" class="scrollable">PORTFOLIO<br><font size="1">ポートフォリオ</font></a></li>
+            <li><a href="#link4" class="scrollable">NEWS<br><font size="1">ニュース</font></a></li>
           </ul>
           <ul class="sub-menu-list sub01">
-            <li><a href="">履歴書</a></li>
-            <li><a href="">職務経歴書</a></li>
-            <li><a href="">趣味・特技</a></li>
-            <li><a href="">自己ＰＲ</a></li>
+            <li><a href="#personality" class="scrollable">Personality</a></li>
+            <li><a href="#policy" class="scrollable">Policy</a></li>
           </ul>
           <ul class="sub-menu-list sub02">
-            <li><a href="">企業サイト改修</a></li>
-            <li><a href="">某ＲＰＧ風Ｗｅｂゲーム</a></li>
-            <li><a href="">観光サイト制作</a></li>
-            <li><a href="">就労・就職までの流れ</a></li>
+            <li><a href="#homepage" class="scrollable">Homepage</a></li>
+            <li><a href="#movie" class="scrollable">Movie</a></li>
+            <li><a href="#music" class="scrollable">Music</a></li>
           </ul>
         </div>
 
@@ -341,7 +456,7 @@
               <ul class="global-navigation__list">
 
                 <li>
-                  <a href="./index.html" class="global-navigation__link">
+                  <a href="" class="global-navigation__link">
                     <p>TOP<font size="1">　トップ</font></p>
                   </a>
                 </li>
@@ -421,8 +536,8 @@
                 -->
 
                 <li>
-                  <a href="./inquiry.html" class="global-navigation__link">
-                    <p>CONTACT<font size="1">　お問い合わせ</font></p>
+                  <a href="#link4" class="global-navigation__link" onclick="closeAndJump();">
+                    <p>NEWS<font size="1">　ニュース</font></p>
                   </a>
                 </li> 
 
@@ -511,16 +626,51 @@
               </tr>
             </table>
 
-            <h2 style="color:#aaaaaa; text-align:center; font-family:'ZenOldMincho-Regular';">Policy</h2>
+            <h2 id="personality" style="color:#aaaaaa; text-align:center; font-family:'ZenOldMincho-Regular';">Personality</h2>
+
+            <p>
+              　私は、仕事との関わり方において、「既に形在るモノに触れ<br>
+              る」よりも「形在るモノを更に使いやすくする」ことや、<br>
+              「形無きモノを形作り、触れてもらう」という在り方に魅力や<br>
+              興味関心、好奇心を強く引き立てられます。<br>
+              <br>
+              　上記に至った経緯は、数多くの失敗経験によるものです。<br>
+              データの入力間違いなどにより各関係機関にご迷惑をお掛け<br>
+              する事が多かった私は、着手の仕方について以下の事を<br>
+              考える様になりました。<br>
+              <br>
+              ・ヒューマンエラーの頻度はどの様にすれば減らせるのか<br>
+              ・どの様なモノがあれば業務効率が図れるのか<br>
+              ・そのモノはどの様にすれば作れるのか<br>
+              ・作るために必要な事は何か<br>
+              <br>
+              　考えに対し、情報を検索する過程でプログラミングによる<br>
+              「モノづくり」の世界を知り、私はクリエイティブな仕事に<br>
+              携わりたい、すぐには難しくても、今触れている仕事の中で<br>
+              働きやすくなる様に、何かを変える動きがしたいという思いが<br>
+              自然と強くなっていきました。<br>
+              <br>
+              　実績として、顧客からの問い合わせ傾向の調査、<br>
+              苦言等への対策マニュアルの作成、サービスの改善・改良点<br>
+              の考案など、ユーザー満足度の向上と、企業・社会への<br>
+              貢献へ取り組んでまいりました。<br>
+              <br>
+              　今後も様々なプログラミング言語を学び、創造の幅と<br>
+              可能性を広げていきたいと思います。
+            </p>
+
+
+            <h2 id="policy" style="color:#aaaaaa; text-align:center; font-family:'ZenOldMincho-Regular';">Policy</h2>
 
             <p id="return">
               　私は、創造する物や形に常識を当て嵌めず、
               独自の視点や発想から想像を創造し、自由に表現していく過程を大事にしています。
               「想像は無限大」と言われる様に「創造の可能性も無限大」であると思っています。<br>
-              　また、私なりの流儀として「人への歩み寄り、寄り添い」を軸に、
-              利便性、生産性、効率性などの向上を心掛けて創造する様に取り組んでおります。
-              今ある社会や環境が、更に良くなる「世」を目指して
-              私の持ち得る「知恵と知識」をお届けいたします。
+              <br>
+              　また、私なりの流儀として 「仁の心を持ち、思いやり、歩み寄り、寄り添い」を
+              軸に、利便性、生産性、効率性などの向上を心掛けて創造する様に取り組んでおります。<br>
+              <br>
+              　今ある社会や環境が、更に良くなる「世」を目指して私の持ち得る「知恵と知識」をお届けいたします。
             </p>
 
             <a href="#secret" class="detail-box login" onclick="showLogin1()">障害について
@@ -535,7 +685,7 @@
       <section class="content2" id="link2">
         <h1 class="background_text">PORTFOLIO</h1>
 
-        <h2 style="color:#aaaaaa; text-align:center; font-family:'ZenOldMincho-Regular';">Homepage</h2>
+        <h2 id="homepage" style="color:#aaaaaa; text-align:center; font-family:'ZenOldMincho-Regular'; padding-top:150px;">Homepage</h2>
 
         <div class="portfolio">
           <div class="portfolio-title">
@@ -585,12 +735,12 @@
             ※許諾を得ていないため<br>
             　画像の使用ができません。
           </div>
-          <div class="portfolio-banner">
+          <div class="portfolio-banner" style="cursor: no-drop;">
             <img src="./img/banner/noimage.jpg" style="width: 50%; border-radius: 5px;">
           </div>
         </div>
 
-        <h2 style="color:#aaaaaa; text-align:center; font-family:'ZenOldMincho-Regular';">Movie</h2>
+        <h2 id="movie" style="color:#aaaaaa; text-align:center; font-family:'ZenOldMincho-Regular'; padding-top: 150px;">Movie</h2>
 
         <div class="portfolio">
           <div class="portfolio-title">
@@ -602,7 +752,7 @@
           </div>
         </div>
 
-        <h2 style="color:#aaaaaa; text-align:center; font-family:'ZenOldMincho-Regular';">Music</h2>
+        <h2 id="music" style="color:#aaaaaa; text-align:center; font-family:'ZenOldMincho-Regular'; padding-top: 150px;">Music</h2>
 
         <div class="portfolio">
           <div class="portfolio-title">
@@ -627,7 +777,7 @@
 
       </section> -->
 
-      <section class="content4">
+      <section class="content4" id="link4">
         <h1 class="background_text">NEWS</h1>
         <div>
           <ul class="newslist">
@@ -693,7 +843,7 @@
             <div class="footer_sns_head">
               <span>SOCIAL MEDIA</span><br>
               <span>OFFICIAL ACCOUNT</span><br>
-              <P style="font-size: min(2vw,12px)">※現在利用はございません。</P>
+              <span>※現在利用はございません。</span>
             </div>
             <ul class="footer_sns_list">
               <li class="listitem">
@@ -734,7 +884,8 @@
       </div>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" type="text/javascript"></script>
+    <script src="./js/jquery.scrollablelink.js" type="text/javascript"></script>
 
   </body>
 
