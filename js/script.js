@@ -49,7 +49,6 @@ $(function () {
   webStorage();
 });
 
-
 var slide = document.getElementById('slider');
 var prev = document.getElementById('prev');
 var next = document.getElementById('next');
@@ -263,31 +262,6 @@ function click6() {
 // }, 1000);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----- ハンバーガー及びアコーディオンメニュー関連 -----*/
 
 // メニュー展開時に背景を固定
@@ -461,13 +435,13 @@ function showLogin1(){
 	const loginForm1 = document.getElementById("handicapped");
 	// blockで表示
 	loginForm1.style.display ="block";
-	$("body").css("overflow-y", "hidden");        
+	$("body").css("overflow-y","hidden");
 }
 function hideLogin1(){
 	var loginForm1 = document.getElementById("handicapped");
 	// noneで非表示
 	loginForm1.style.display ="none";
-	$("body").css("overflow-y", "visible");
+	$("body").css("overflow-y","visible");
 }
 //お問い合わせ
 hideLogin2();

@@ -129,12 +129,11 @@ body {
 }
 
 .wrapper {
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
+  overflow:hidden;
+  width: 100%;
+  height: 100%;
   position: relative;
   z-index: 4;
-
 }
 
 .wrapper button {
@@ -268,37 +267,43 @@ body {
   background-image: url(../img/illust/disability_certificate.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
 }
 .handicapped2 {
   background-image: url(../img/illust/stress.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
 }
 .handicapped3 {
   background-image: url(../img/illust/change.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
 }
 .handicapped4 {
   background-image: url(../img/illust/characteristics.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
 }
 .handicapped5 {
   background-image: url(../img/illust/handle.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
 }
 .handicapped6 {
   background-image: url(../img/illust/consideration.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
 }
 
 .indicator {
   width: 100%;
   position: absolute;
-  bottom: 10px;
+  bottom: 15%;
   display: flex;
   z-index: 10;
   justify-content: center;
