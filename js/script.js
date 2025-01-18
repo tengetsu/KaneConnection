@@ -49,6 +49,7 @@ $(function () {
   webStorage();
 });
 
+/* -----------カルーセル関連ここから--------------- */
 var slide = document.getElementById('slider');
 var prev = document.getElementById('prev');
 var next = document.getElementById('next');
@@ -60,7 +61,6 @@ var list5 = document.getElementById('list5');
 var list6 = document.getElementById('list6');
 
 // クリックイベント
-
 next.addEventListener('click', nextClick);
 prev.addEventListener('click', prevClick);
 
@@ -103,7 +103,6 @@ function nextClick() {
     count = 0;
   }
 };
-
 function prevClick() {
   if (slide.classList.contains('slider1') === true) {
     slide.classList.remove('slider1');
@@ -145,7 +144,6 @@ function prevClick() {
 };
 
 // インジケーター
-
 list1.addEventListener('click', click1);
 list2.addEventListener('click', click2);
 list3.addEventListener('click', click3);
@@ -168,7 +166,6 @@ function click1() {
   list6.style.backgroundColor = 'transparent';
   count = 0;
 }
-
 function click2() {
   slide.classList.remove('slider1');
   slide.classList.add('slider2');
@@ -184,7 +181,6 @@ function click2() {
   list6.style.backgroundColor = 'transparent';
   count = 0;
 }
-
 function click3() {
   slide.classList.remove('slider1');
   slide.classList.remove('slider2');
@@ -200,7 +196,6 @@ function click3() {
   list6.style.backgroundColor = 'transparent';
   count = 0;
 }
-
 function click4() {
   slide.classList.remove('slider1');
   slide.classList.remove('slider2');
@@ -216,7 +211,6 @@ function click4() {
   list6.style.backgroundColor = 'transparent';
   count = 0;
 }
-
 function click5() {
   slide.classList.remove('slider1');
   slide.classList.remove('slider2');
@@ -232,7 +226,6 @@ function click5() {
   list6.style.backgroundColor = 'transparent';
   count = 0;
 }
-
 function click6() {
   slide.classList.remove('slider1');
   slide.classList.remove('slider2');
@@ -260,6 +253,7 @@ function click6() {
 //   count++;
 //   console.log(count);
 // }, 1000);
+/* -----------カルーセル関連ここまで--------------- */
 
 
 /*----- ハンバーガー及びアコーディオンメニュー関連 -----*/
