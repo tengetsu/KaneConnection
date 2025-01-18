@@ -430,18 +430,29 @@ window.addEventListener("scroll", function () {
 
 /*----オーバーレイ処理----*/
 //障害について
+
+function noscroll(e){
+  e.preventDefault();
+}
+
 hideLogin1();
 function showLogin1(){
 	const loginForm1 = document.getElementById("handicapped");
 	// blockで表示
 	loginForm1.style.display ="block";
-	$("body").css("overflow-y","hidden");
+	// $("body").css("overflow-y","hidden");
+
+  document.addEventListener('touchmove', noscroll, {passive: false});
+  document.addEventListener('wheel', noscroll, {passive: false});
 }
 function hideLogin1(){
 	var loginForm1 = document.getElementById("handicapped");
 	// noneで非表示
 	loginForm1.style.display ="none";
-	$("body").css("overflow-y","visible");
+	// $("body").css("overflow-y","visible");
+
+  document.removeEventListener('touchmove', noscroll);
+  document.removeEventListener('wheel', noscroll);
 }
 //お問い合わせ
 hideLogin2();
